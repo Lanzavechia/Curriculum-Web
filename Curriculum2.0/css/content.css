@@ -1,0 +1,139 @@
+
+
+#logo{
+    color:#fb9a40 ;
+}
+header{
+    width: 100%;
+    color: #fb9a40;
+}
+
+.content{
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.content span{
+    color: #fb9a40;
+}
+
+.content h1{
+    margin-top: 15vh;
+}
+
+.content p{
+    color: #393e46;
+    font-weight: 900;
+}
+
+#logo{
+    font-size: 30px;
+    
+}
+
+nav{
+    font-size: 20px;
+}
+
+
+
+/* BOTON (KNOW MORE) */
+#boton{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    color: #fb9a40;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: none;
+}
+
+#boton::before ,#boton::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 4px solid black;
+    transition: all .8s ease;
+}
+
+#boton::after{
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+#boton::before{
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+#boton:hover::after, #boton:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#boton{
+    
+    text-decoration: none;
+}
+
+
+
+#navbarNavAltMarkup  a {
+    color: black;
+    font-size: 23px;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    #navbarNavAltMarkup  a {
+        color: black;
+        margin-right: 33px;
+    }
+    .content h1{
+        margin-top: 5vh;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:425px){
+    #navbarNavAltMarkup  a {
+        color: black;
+    }
+    
+    #navbarNavAltMarkup .navbar-toggler{
+        background-color: black;
+    }
+
+    #body{
+        background-image: none;
+    }
+
+    .content{
+        width: 100%;
+    }
+    .movile-content{
+        height: 140vh;
+        background-image: url(../img/mobile_background_header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -50vh;
+    }
+    .content h1{
+        margin-top: 2vh;
+    }
+    
+
+}
